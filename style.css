@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-letra-titulos: #070F18;
+    --cor-letra-texto: #575455;
+    --cor-letra-destaque: #F75C4E;
+    --cor-fundo: #ffffffd7;
+    --cor-botao: #1F7CFF;
+    --cor-formulario: #F5F6FB;
+
+}
+
+/* -- Informações gerais -- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0rem 10rem;
+    background-color: var(--cor-fundo);
+}
+
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.texto_principal{
+    color: var(--cor-letra-texto);
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+    padding-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.botao{
+    text-decoration: none;
+    background-color: var(--cor-botao);
+    color: var(--cor-fundo);
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.875rem;
+    width: 11.25rem;
+    border: 0rem;
+}
+
+.texto_destaque{
+    font-size: 1rem;
+    color: var(--cor-letra-destaque);
+    font-weight: 700;
+}
+
+.subtitulos{
+    font-size: 2.25rem;
+}
+
+/* -- cabeçalho -- */
+
+header{
+    margin-bottom: 2rem;
+}
+
+#title{
+    padding : 2.5rem 0rem;
+    
+}
+
+#main_title{
+    color: var(--cor-letra-titulos);
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-decoration: underline;
+}
+
+#menu{
+    display: flex;
+    justify-content: right;
+    padding-top: 3.063rem;
+    margin-left: 9rem;
+}
+
+.links_menu{
+    list-style: none;
+}
+#menu a{
+    font-size: 1rem;
+    text-decoration: none;
+    padding-left: 1.75rem;
+    color: var(--cor-letra-titulos);
+    font-weight: 400;
+}
+
+/* -- Banner -- */
+
+#titulo_banner{
+    font-size: 3.75rem;
+    color: var(--cor-letra-titulos);
+    font-weight: 700;
+
+}
+
+#sobre{
+    margin-top: 2.25rem;
+}
+
+#banner_maria{
+    margin-left: 2.625rem;
+    
+}
+
+#banner_maria img{
+    width: 100%;
+}
+
+/* -- Clientes -- */
+
+#clientes{
+    padding-top: 4.875rem;
+    padding-bottom: 8.75rem;
+}
+
+#titulo_clientes{
+    padding-right: 2rem;
+}
+
+.card_clientes{
+    padding-left: 12rem;
+}
+
+
+/*-- serviços -- */
+
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*-- serviços opções -- */
+
+#servicos_opcoes{
+    margin-top: 3.813rem;
+    margin-bottom: 4.438rem;
+}
+
+.card_servicos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.card_servicos img{
+    margin-bottom: 1.938rem;
+}
+
+/*-- Aba Contato -- */
+
+#contato{
+    margin-bottom: 10.313rem;
+}
+
+#contato_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.625rem
+}
+
+#contato_form{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 0.75rem;   
+}
+
+.formulario{
+    width: 25.375rem;
+    margin-bottom: 1.25rem;
+    height: 3rem;
+    padding-left: 2rem;
+    background-color: var(--cor-formulario);
+    color: var(--cor-letra-texto);
+    border: 0rem;
+    border-radius: 3.125rem;
+
+}
+
+.formulario::placeholder{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*-- Aba Portfolio -- */
+
+#portfolio{
+    margin-bottom: 15rem;
+}
+
+#header_portfolio{
+    margin-bottom: 3.813rem;
+}
+
+#imagens_portfolio{
+    display: flex;
+    justify-content: space-between;
+}
